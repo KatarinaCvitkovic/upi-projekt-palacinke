@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+    {% if action == "edit" %}
+        <h2>Uredi proizvod</h2>
+    {% else %}
+        <h2>Dodaj proizvod</h2>
+    {% endif %}
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        {% if action == "edit" %}
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Spremi</button>
+        {% else %}
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Dodaj</button>
+        {% endif %}
+    </form>
+{% endblock %}

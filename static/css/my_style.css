@@ -1,0 +1,17 @@
+.striker {
+    text-decoration: line-through;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 10px;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.addImageButton {
+    padding-left: 6px;
+    padding-bottom: 38px;
+}

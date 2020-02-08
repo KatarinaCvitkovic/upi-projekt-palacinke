@@ -1,0 +1,12 @@
+Project dependecies:
+    > pip install django==2.0.6
+    > pip install mysqlclient-1.4.6-cp38-cp38-win_amd64.whl
+        // ovisi o verziji Pythona i verziji Windowsa (32bit ili 64 bit), verzije na linku http://qpypi.qpython.org/simple/mysqlclient/
+    > pip install django-crispy-forms
+    > pip install pillow
+    > pip install django-fancybox
+
+To run project:
+    > python manage.py makemigrations pancakes_app
+    > python manage.py migrate
+    > python manage.py runserver
